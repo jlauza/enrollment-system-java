@@ -57,39 +57,6 @@ public class enrollment extends javax.swing.JFrame {
             String dbuser ="root";
             String dbpass ="";
             con = DriverManager.getConnection(host,dbuser,dbpass);
-            
-            //execute
-            /*
-            stmt = con.createStatement();
-            String sql = "SELECT * FROM student_info";
-            ResultSet rs = stmt.executeQuery(sql);
-            
-            //move cursor
-            rs.next();
-            int id_col = rs.getInt("student_dbid");
-            String dbid = Integer.toString(id_col);
-            String sid = rs.getString("StudentID");
-            String fname = rs.getString("Firstname");
-            String mname = rs.getString("Middlename");
-            String lname = rs.getString("Lastname");
-            String age = rs.getString("Age");
-            String gender = rs.getString("Gender");
-            String course = rs.getString("Course");
-            String yrlvl = rs.getString("YearLevel");
-            String email = rs.getString("Email");
-            
-            //display data
-            textsdbid.setText(dbid);
-            textsid.setText(sid);
-            textsfname.setText(fname);
-            textsmname.setText(mname);
-            textslname.setText(lname);
-            textsage.setText(age);
-            textsgender.setSelectedItem(gender);
-            textscourse.setText(course);
-            textyrlvl.setSelectedItem(yrlvl);
-            textsemal.setText(email);
-            */
         }
         catch(SQLException e){
             JOptionPane.showMessageDialog(this, e.getMessage());
