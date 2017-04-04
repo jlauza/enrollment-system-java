@@ -10,4 +10,4 @@ This is to refresh jTable and update new data changes. Place this to your /lib f
 
 <h4>Java application, Jframe forms and Classes files Instruction</h4>
 #You can exclude build.xml amd manifest.mf to your download<br/>
-1. Place your files .java and classes in package folder of your project<br/>
+1. Place your files jFrame forms (.form) and classes (.java) in package folder of your project<br/>
